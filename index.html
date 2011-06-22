@@ -46,7 +46,7 @@
       <span class="small">by <a href="http://github.com/EppO">EppO</a></span></h1>
 
     <div class="description">
-      Roles library with object scoping
+      Roles library with resource scoping
     </div>
 
     <p>Very simple Roles library without any authorization enforcement supporting scope on resource object.<p>
@@ -55,7 +55,7 @@
 <pre>user.has_role?("moderator", Forum.first)<br/>
 => false # if user is moderator of another Forum
 </pre>
-<p>This library was intended to be used with CanCan and devise but should be generic enough to be used by any other authentication/authorization solutions.</p>
+<p>This library was intended to be used with <a href="https://github.com/ryanb/cancan">CanCan</a> and <a href="https://github.com/plataformatec/devise">Devise</a> but should be generic enough to be used by any other authentication/authorization solutions.</p>
 
 <h2>Dependencies</h2>
 <ul>
