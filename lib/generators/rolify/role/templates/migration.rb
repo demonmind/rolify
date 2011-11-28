@@ -1,5 +1,5 @@
 class RolifyCreate<%= role_cname.pluralize.camelize %> < ActiveRecord::Migration
-  def change
+  def self.up
     create_table(:<%= role_cname.tableize %>) do |t|
       t.string :name
       t.references :resource, :polymorphic => true
